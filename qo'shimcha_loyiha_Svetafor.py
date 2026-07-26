@@ -8,11 +8,10 @@ class Svetafor:
         self.chiroq = chiroq
 
     def chiraq_yoq(self):
-        sum = 0
-        while sum<=2:
+        # sum = 0
+        while True:
             if self.chiroq == "qizil" and self.tugma == "1":
                 time.sleep(1)
-                print(self.chiroq)
                 print(
                     "🟥🟥🟥🟥🟥\n🟥🟥🟥🟥🟥   Piyodalar\n🟥🟥🟥🟥🟥   o'tishi\n🟥🟥🟥🟥🟥   mumkin\n🟥🟥🟥🟥🟥\n"
                 )
@@ -24,7 +23,7 @@ class Svetafor:
                 print(
                     "🟨🟨🟨🟨🟨\n🟨🟨🟨🟨🟨   Mashinalar\n🟨🟨🟨🟨🟨   to'xtamoqda!\n🟨🟨🟨🟨🟨   shoshmang!!!\n🟨🟨🟨🟨🟨\n"
                 )
-                time.sleep(2)
+                time.sleep(1)
                 # sum+=1
 
             elif self.chiroq == "sariq" and self.tugma == "1":
@@ -32,7 +31,7 @@ class Svetafor:
                 print(
                     "🟨🟨🟨🟨🟨\n🟨🟨🟨🟨🟨   Mashinalar\n🟨🟨🟨🟨🟨   to'xtamoqda!\n🟨🟨🟨🟨🟨   shoshmang!!!\n🟨🟨🟨🟨🟨\n"
                 )
-                print(self.chiroq)
+
                 button = input("Qatnov to'xtatish tugmasi: (1)\n")
                 time.sleep(2)
                 print(
@@ -50,7 +49,7 @@ class Svetafor:
                 print(
                     "🟩🟩🟩🟩🟩\n🟩🟩🟩🟩🟩   Mashinalar\n🟩🟩🟩🟩🟩   harakatlanmoqda\n🟩🟩🟩🟩🟩   To'xtang!!!\n🟩🟩🟩🟩🟩\n"
                 )
-                print(self.chiroq)
+
                 button = input("Qatnov to'xtatish tugmasi: (1)\n")
                 time.sleep(2)
                 print(
@@ -66,10 +65,9 @@ class Svetafor:
 
 svetafor_chiroq = ("qizil", "sariq", "yashil")
 chiroq = random.choice(svetafor_chiroq)
-print(chiroq)
 # tugma_num = int(input("Piyodalar o'tishini so'rash uchun 1ni bosing"))
 tugma = Svetafor("1", chiroq)
 tugma.chiraq_yoq()
 
 
-# BU dasturni Toshkentdagi yangi svetaforlardan ilhomlanib yaratdim yani piyodalar o'tishni hohlaganda tugma bosadi svetafor esa o'z kerakli vaqtda to'xtaydi, dasturda kamchiliklar bor texnik bilimim yetmadi to'g'irlashga 
+# BU dasturni Toshkentdagi yangi svetaforlardan ilhomlanib yaratdim yani piyodalar o'tishni hohlaganda tugma bosadi svetafor esa o'z kerakli vaqtda to'xtaydi, dasturda kamchiliklar bor texnik bilimim yetmadi to'g'irlashga
